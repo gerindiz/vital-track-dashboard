@@ -53,9 +53,9 @@ Sigue estos pasos para desplegar el entorno de desarrollo localmente:
    cd vital-track-dashboard
 
 2. ** Instalar dependencias:
+  ```Bash
+npm install
 
-Bash
-```npm install
 3. ** Configurar variables de entorno:
 Crea un archivo .env en la raíz del proyecto:
 
