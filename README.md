@@ -1,5 +1,12 @@
 # 🌡️ VitalTrack - Dashboard de Telemetría Logística
 
+<img width="1903" height="932" alt="Imagen del Dashboard" src="https://github.com/user-attachments/assets/f14a0181-e992-4824-8661-87143d74b84f" />
+
+
+
+
+
+
 VitalTrack es una solución profesional diseñada para el monitoreo en tiempo real de la cadena de frío en el transporte de insumos médicos críticos (vacunas, insulina, sueros). 
 
 El sistema permite visualizar la ubicación geográfica de los envíos y su integridad térmica, alertando instantáneamente sobre desviaciones fuera del rango permitido (>7°C).
