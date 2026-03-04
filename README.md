@@ -1,54 +1,51 @@
+# 🌡️ VitalTrack - Dashboard de Telemetría Logística Crítica
 
-# 🌡️ VitalTrack - Dashboard de Telemetría Logística
+[![Vercel Deployment](https://img.shields.io/badge/Deploy-Vercel-black?style=for-the-badge&logo=vercel)](https://vital-track-dashboard.vercel.app)
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
+[![Supabase](https://img.shields.io/badge/Supabase-Database-3ECF8E?style=for-the-badge&logo=supabase)](https://supabase.com/)
 
-VitalTrack es una solución profesional diseñada para el monitoreo en tiempo real de la cadena de frío en el transporte de insumos médicos críticos como vacunas, insulina y sueros.
+**VitalTrack** es una solución profesional diseñada para el monitoreo en tiempo real de la cadena de frío en el transporte de insumos médicos críticos (vacunas, insulina, sueros). 
 
-El sistema permite visualizar la ubicación geográfica de los envíos y su integridad térmica, alertando instantáneamente sobre desviaciones fuera del rango permitido (>7°C).
-#
-<img width="1901" height="930" alt="Imagen del Dashboard act" src="https://github.com/user-attachments/assets/135739d5-8df1-4a98-baba-9275856c11ae" />
-
-#
-
-🔗 **Demo en vivo:** [https://vital-track-dashboard.vercel.app](https://vital-track-dashboard.vercel.app)
-
-## 🚀 Tecnologías Utilizadas
-
-* **Frontend**: React 19 con TypeScript.
-* **Estilos**: Tailwind CSS v4 para una interfaz moderna y fluida.
-* **Backend**: Supabase (PostgreSQL + Realtime) para la persistencia de datos.
-* **Reportes**: SheetJS (XLSX) para la generación de documentos de auditoría.
-* **Iconografía**: Lucide React.
-
-## 📊 Características Principales
-
-* **Monitoreo en Tiempo Real**: Sincronización automática con la base de datos de Supabase.
-* **Gestión de Envíos**: Formulario integrado para registrar nuevos despachos con telemetría.
-* **Mapa Interactivo**: Visualización dinámica de puntos de control y estados críticos.
-* **Exportación de Datos**: Generación de reportes detallados en formato **Excel (.xlsx)** para auditorías de cumplimiento sanitario.
-* **Panel de KPIs**: Métricas clave sobre alertas críticas y promedios térmicos.
-
-## 🛠️ Instalación y Configuración
-
-Para ejecutar este proyecto localmente, sigue estos pasos:
-
-1.  **Clonar el repositorio:**
-    ```bash
-    git clone [https://github.com/gerindiz/vital-track-dashboard.git](https://github.com/gerindiz/vital-track-dashboard.git)
-    ```
-2.  **Instalar dependencias:**
-    ```bash
-    npm install
-    ```
-3.  **Configurar variables de entorno:**
-    Crea un archivo `.env` en la raíz del proyecto y añade tus credenciales de Supabase:
-    ```env
-    VITE_SUPABASE_URL=tu_url_de_supabase
-    VITE_SUPABASE_ANON_KEY=tu_clave_anonima
-    ```
-4.  **Iniciar el servidor de desarrollo:**
-    ```bash
-    npm run dev
-    ```
+El sistema centraliza la telemetría geográfica y térmica, permitiendo una respuesta inmediata ante desviaciones fuera del rango permitido (>7°C) para garantizar la integridad sanitaria.
 
 ---
-Desarrollado por **German** - 2026
+
+## 📸 Vista Previa del Sistema
+
+🔗 **Explorar Demo en Vivo:** [https://vital-track-dashboard.vercel.app](https://vital-track-dashboard.vercel.app)
+
+---
+
+## 🚀 Características Principales
+
+* **Centro de Monitoreo Geográfico**: Mapa interactivo con **Leaflet** que posiciona cada envío mediante geocodificación activa.
+* **Feed de Alertas Críticas**: Panel inteligente con notificaciones visuales (ping de alerta) para envíos que superan los umbrales de temperatura.
+* **Gestión de Flota Dual**: Vistas separadas para *Dashboard General* (Control) y *Administración de Envíos* (Gestión de datos).
+* **Notificaciones en Tiempo Real**: Feedback instantáneo mediante **React Hot Toast** para confirmaciones de carga y alertas de sistema.
+* **Auditoría y Exportación**: Generación de reportes técnicos en formato **Excel (.xlsx)** procesados con **SheetJS**.
+* **KPIs de Rendimiento**: Métricas dinámicas que calculan el promedio térmico global y el conteo de alertas críticas.
+
+---
+
+## 🛠️ Stack Tecnológico
+
+| Capa | Tecnología |
+| :--- | :--- |
+| **Frontend** | React 19 + TypeScript |
+| **Estilos** | Tailwind CSS v4 (Mobile First) |
+| **Base de Datos** | Supabase (PostgreSQL + Realtime Engine) |
+| **Mapas** | React-Leaflet + OpenStreetMap API |
+| **Iconografía** | Lucide React |
+| **Utilidades** | SheetJS (Excel) + React Hot Toast |
+
+---
+
+## ⚙️ Instalación y Configuración
+
+Sigue estos pasos para desplegar el entorno de desarrollo localmente:
+
+1. **Clonar el repositorio:**
+   ```bash
+   git clone [https://github.com/gerindiz/vital-track-dashboard.git](https://github.com/gerindiz/vital-track-dashboard.git)
+   cd vital-track-dashboard
