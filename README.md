@@ -52,7 +52,7 @@ Sigue estos pasos para desplegar el entorno de desarrollo localmente:
    git clone [https://github.com/gerindiz/vital-track-dashboard.git](https://github.com/gerindiz/vital-track-dashboard.git)
    cd vital-track-dashboard
 
-   Instalar dependencias:
+2. ** Instalar dependencias:
 
 Bash
 ```npm install
