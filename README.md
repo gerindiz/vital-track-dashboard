@@ -17,8 +17,7 @@ Para ejecutar este proyecto localmente, sigue estos pasos:
 
 1.  **Clonar el repositorio:**
     ```bash
-    git clone [https://github.com/tu-usuario/vital-track-dashboard.git](https://github.com/tu-usuario/vital-track-dashboard.git)
-    cd vital-track-dashboard
+    git clone https://github.com/gerindiz/vital-track-dashboard.git
     ```
 
 2.  **Instalar dependencias:**
