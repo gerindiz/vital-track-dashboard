@@ -73,4 +73,4 @@ npm run dev
 
 [ ] Historial de eventos críticos por fecha.
 
-Desarrollado por Gerindiz - 2024
+Desarrollado por Gerindiz - 2026
