@@ -13,8 +13,6 @@ El sistema centraliza la telemetría geográfica y térmica, permitiendo una res
 
 ## 📸 Vista Previa del Sistema
 
-<img width="1901" height="930" alt="Dashboard de VitalTrack" src="https://github.com/user-attachments/assets/135739d5-8df1-4a98-baba-9275856c11ae" />
-
 🔗 **Explorar Demo en Vivo:** [https://vital-track-dashboard.vercel.app](https://vital-track-dashboard.vercel.app)
 
 ---
@@ -51,11 +49,3 @@ Sigue estos pasos para desplegar el entorno de desarrollo localmente:
    ```bash
    git clone [https://github.com/gerindiz/vital-track-dashboard.git](https://github.com/gerindiz/vital-track-dashboard.git)
    cd vital-track-dashboard
-
- ```bash
-npm install
-
-
- ```bash
-VITE_SUPABASE_URL=tu_url_de_supabase
-VITE_SUPABASE_ANON_KEY=tu_clave_anonima
