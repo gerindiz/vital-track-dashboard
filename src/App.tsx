@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import { 
-  LayoutDashboard, Truck, Bell, Activity, MapPin, Trash2, Plus, 
-  AlertCircle, Thermometer, Search, Settings, Package, Navigation, Filter
+import {
+  LayoutDashboard, Truck, Bell, Activity, MapPin, Trash2, Plus,
+  AlertCircle, Thermometer, Search, Settings, Package, Navigation, Filter,
+  FileSpreadsheet // ✅ Icono agregado
 } from 'lucide-react';
 import { createClient } from '@supabase/supabase-js';
 
-// --- CONFIGURACIÓN DE CONEXIÓN ---
+// ✅ Importación de tu utilidad (asegurate de haber creado el archivo src/utils/exportExcel.ts)
+import { exportToExcel } from './utils/exportExcel';
 
+// --- CONFIGURACIÓN DE CONEXIÓN ---
 const SUPABASE_URL = (import.meta as any).env.VITE_SUPABASE_URL;
 const SUPABASE_ANON_KEY = (import.meta as any).env.VITE_SUPABASE_ANON_KEY;
 
@@ -129,7 +132,7 @@ export default function App() {
             </div>
 
             <div className="grid grid-cols-12 gap-8">
-                {/* Mapa con Animación */}
+                {/* Mapa */}
                 <div className="col-span-12 lg:col-span-8 bg-white rounded-[32px] border border-slate-100 p-2 shadow-sm h-[400px] relative overflow-hidden group">
                     <div className="w-full h-full bg-slate-900 rounded-[28px] relative overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=1200&q=80" className="absolute inset-0 w-full h-full object-cover opacity-20 grayscale" alt="Mapa" />
@@ -160,7 +163,7 @@ export default function App() {
                     </div>
                 </div>
 
-                {/* --- NUEVA BARRA DE CARGA INTEGRADA --- */}
+                {/* Formulario de carga */}
                 <div className="col-span-12 bg-white p-8 rounded-[32px] border border-slate-100 shadow-sm">
                     <h3 className="font-black text-sm uppercase tracking-widest text-slate-400 mb-6 flex items-center gap-2">
                         <Plus size={18} className="text-blue-600" /> Nuevo Registro de Envío
@@ -194,10 +197,19 @@ export default function App() {
                     </form>
                 </div>
 
-                {/* Tabla de Actividad */}
+                {/* Tabla de Actividad con BOTÓN EXCEL */}
                 <div className="col-span-12 bg-white rounded-[32px] border border-slate-100 shadow-sm overflow-hidden mb-20">
-                    <div className="p-8 border-b bg-slate-50/30">
+                    <div className="p-8 border-b bg-slate-50/30 flex justify-between items-center">
                         <h3 className="font-black text-lg text-slate-800">Historial de Despachos</h3>
+                        
+                        {/* ✅ BOTÓN DE EXPORTACIÓN AGREGADO AQUÍ */}
+                        <button 
+                          onClick={() => exportToExcel(shipments)}
+                          className="flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2.5 rounded-2xl transition-all shadow-lg shadow-emerald-100 text-[10px] font-black uppercase tracking-widest"
+                        >
+                          <FileSpreadsheet size={16} />
+                          Exportar Excel
+                        </button>
                     </div>
                     <table className="w-full text-left">
                         <thead className="bg-slate-50 text-[10px] font-black text-slate-400 uppercase tracking-widest">
