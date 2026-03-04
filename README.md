@@ -55,7 +55,7 @@ Sigue estos pasos para desplegar el entorno de desarrollo localmente:
    Instalar dependencias:
 
 Bash
-npm install
+```npm install
 Configurar variables de entorno:
 Crea un archivo .env en la raíz del proyecto:
 
@@ -64,8 +64,9 @@ VITE_SUPABASE_URL=tu_url_de_supabase
 VITE_SUPABASE_ANON_KEY=tu_clave_anonima
 Ejecutar aplicación:
 
-Bash
+```Bash
 npm run dev
+---
 ##📈 Próximas Mejoras
 [ ] Gráficos de tendencia térmica con Chart.js.
 
