@@ -51,3 +51,26 @@ Sigue estos pasos para desplegar el entorno de desarrollo localmente:
    ```bash
    git clone [https://github.com/gerindiz/vital-track-dashboard.git](https://github.com/gerindiz/vital-track-dashboard.git)
    cd vital-track-dashboard
+
+   Instalar dependencias:
+
+```Bash
+npm install
+Configurar variables de entorno:
+Crea un archivo .env en la raíz del proyecto:
+
+Fragmento de código
+VITE_SUPABASE_URL=tu_url_de_supabase
+VITE_SUPABASE_ANON_KEY=tu_clave_anonima
+Ejecutar aplicación:
+
+```Bash
+npm run dev
+##📈 Próximas Mejoras
+[ ] Gráficos de tendencia térmica con Chart.js.
+
+[ ] Sistema de usuarios con autenticación (Supabase Auth).
+
+[ ] Historial de eventos críticos por fecha.
+
+Desarrollado por Gerindiz - 2024
