@@ -11,7 +11,7 @@
 
 ## 🌐 Demo en Vivo
 Puedes ver la aplicación funcionando aquí:  
-**[👉 Ver VitalTrack Live Demo](TU_LINK_DE_VERCEL_AQUÍ)**
+**[👉 Ver VitalTrack Live Demo](https://vital-track-dashboard.vercel.app/)**
 
 ## 🚀 Características Premium
 
