@@ -11,6 +11,9 @@
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.48.0",
+    "exceljs": "^4.4.0",
+    "jspdf": "^4.2.1",
+    "jspdf-autotable": "^5.0.7",
     "leaflet": "^1.9.4",
     "lucide-react": "^0.475.0",
     "motion": "^12.0.0",
@@ -19,11 +22,11 @@
     "react-hot-toast": "^2.6.0",
     "react-leaflet": "^5.0.0",
     "recharts": "^3.7.0",
-    "vite": "^6.1.0",
-    "xlsx": "^0.18.5"
+    "vite": "^6.1.0"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.0.0",
+    "@types/leaflet": "^1.9.21",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "@vitejs/plugin-react": "^4.3.0",
